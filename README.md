@@ -5,5 +5,5 @@ Currently, I am Head of Python engineering at [Revolut Ltd](https://revolut.com)
 
 ```erlang
   [begin if N < 10 -> 48 + N; true -> 87 + N end end ||
-            <<N:4>> <= crypto:mac(hmac, sha256, <<farshid.ashouri>>, <<@gmail.com>>)].
+            <<N:4>> <= crypto:mac(hmac, sha256, "farshid.ashouri", "@gmail.com")].
 ```
